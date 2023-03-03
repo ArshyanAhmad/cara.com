@@ -1,0 +1,139 @@
+/*#######################
+  Cart Section Start 
+######################### */
+#cart-hero {
+    background: url("/static/img/about/banner.png");
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 40vh;
+    width: 100%;
+    background-size: cover;
+    padding: 14px;
+}
+
+#cart-hero p,
+#cart-hero h2 {
+    color: white;
+}
+
+#cart table {
+    width: 100%;
+    border-collapse: collapse;
+    table-layout: fixed;
+    white-space: nowrap;
+}
+
+#cart table img {
+    width: 70px;
+}
+
+#cart table td:nth-child(1) {
+    width: 100px;
+    text-align: center;
+}
+
+#cart table td:nth-child(2) {
+    width: 150px;
+    text-align: center;
+}
+
+#cart table td:nth-child(3) {
+    width: 250px;
+    text-align: center;
+}
+
+#cart table td:nth-child(4),
+#cart table td:nth-child(5),
+#cart table td:nth-child(6) {
+    width: 150px;
+    text-align: center;
+}
+
+#cart .tbody td input {
+    width: 52px;
+    padding: 10px 5px 10px 10px;
+}
+
+#cart table .thead {
+    border: 1px solid #e3e9e1;
+    border-left: none;
+    border-right: none;
+}
+
+#cart table .thead td {
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 13px;
+    padding: 18px 0;
+}
+
+#cart table .tbody tr td {
+    padding-top: 16px;
+
+}
+
+#cart table .tbody td {
+    font-size: 14px;
+}
+
+#cart {
+    overflow-x: auto;
+}
+
+#cart-add {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+}
+
+#coupon {
+    width: 50%;
+    margin-bottom: 30px;
+}
+
+#coupon h3,
+#subtotal h3 {
+    padding-bottom: 15px;
+}
+
+#coupon .apply,
+#subtotal button {
+    background-color: #088178;
+    color: white;
+    padding: 12px 22px;
+}
+
+#coupon input {
+    padding: 12px 20px;
+    outline: none;
+    width: 60%;
+    margin-right: 10px;
+    border: 1px solid #c0c2c0;
+}
+
+#subtotal {
+    width: 50%;
+    margin-bottom: 30px;
+    border: 1px solid #e1e9e1;
+    padding: 30px;
+}
+
+#subtotal table {
+    border-collapse: collapse;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+#subtotal table td {
+    width: 50%;
+    border: 1px solid #e2e9e1;
+    padding: 10px;
+    font-size: 13px;
+}
+
+/*#######################
+    Cart Section End 
+  ######################### */

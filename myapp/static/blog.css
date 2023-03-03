@@ -1,0 +1,85 @@
+/*#######################
+  Blog Section Start 
+######################### */
+#blog-hero {
+    background: rgba(0, 0, 0, 0.3) url("/static/img/banner/b19.jpg");
+    background-blend-mode: darken;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 40vh;
+    width: 100%;
+    background-size: cover;
+    padding: 14px;
+}
+
+#blog-hero p,
+#blog-hero h2 {
+    color: white;
+}
+
+#blog {
+    padding: 150px 150px 0 150px;
+}
+
+#blog .blog-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding-bottom: 100px;
+    position: relative;
+}
+
+.blog-image {
+    width: 50%;
+    margin-right: 40px;
+}
+
+.blog-details a {
+    text-decoration: none;
+    font-size: 11px;
+    color: black;
+    font-weight: 700;
+    position: relative;
+    transition: all 0.3s ease;
+}
+
+.blog-details a::after {
+    content: "";
+    position: absolute;
+    width: 59%;
+    height: 2px;
+    top: 4px;
+    left: 128px;
+    border-radius: 2px;
+    background-color: black;
+}
+
+.blog-details a:hover {
+    color: #088178;
+}
+
+.blog-details a:hover::after {
+    background-color: #088178;
+}
+
+.blog-box h1 {
+    position: absolute;
+    top: -42px;
+    z-index: -999;
+    left: 0;
+    color: #2222224d;
+    font-size: 65px;
+}
+
+.blog-image img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+
+/*#######################
+    Blog Hero Section End 
+  ######################### */

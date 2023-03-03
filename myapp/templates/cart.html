@@ -1,0 +1,180 @@
+{% extends 'base.html' %}
+{% block title %}Cart{% endblock title %}
+{% block body %}
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark py-3">
+    {% load static %}
+    <a class="navbar-brand" href="#"><img src={% static "/img/logo.png" %} alt="Image" /></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item ">
+                <a class="nav-link" href="/">Home<span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="/shop">Shop</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link " href="/blog">Blog</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="/about">About</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="/contact">Contact</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link active" href="/cart"><i class='bx bx-shopping-bag'></i></a>
+            </li>
+        </ul>
+        {% comment %} <form class="form-inline my-2 my-lg-0">
+            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-danger my-2 my-sm-0" type="submit">Search</button>
+        </form> {% endcomment %}
+    </div>
+
+    <div id="menu">
+        <a href="#" onclick="window.location.href='/cart.html'" id="shop-bag"><i class='bx bx-shopping-bag'></i></a>
+        <i class='bx bx-menu-alt-right menu-icon'></i>
+    </div>
+</nav>
+
+
+<!-- Hero Section -->
+<section id="cart-hero">
+    <h2>#cart</h2>
+    <p>Save more with coupons & up to About off!</p>
+</section>
+
+<section id="cart" class="section-p1">
+    <table width="100%">
+        <thead class="thead">
+            <tr>
+                <td>Remove</td>
+                <td>Image</td>
+                <td>Product</td>
+                <td>Price</td>
+                <td>Quantity</td>
+                <td>Subtotal</td>
+            </tr>
+        </thead>
+
+        <tbody class="tbody">
+            <tr>
+                <td><a href="#"><i class='bx bxs-x-circle'></i></a></td>
+                <td><img src="/static/img/products/f1.jpg" alt=""></td>
+                <td>Cartoon Astranout T-Shirt</td>
+                <td>$118.19</td>
+                <td><input type="number" value="1"></td>
+                <td>$118.19</td>
+            </tr>
+            <tr>
+                <td><a href="#"><i class='bx bxs-x-circle'></i></a></td>
+                <td><img src="/static/img/products/f2.jpg" alt=""></td>
+                <td>Cartoon Astranout T-Shirt</td>
+                <td>$118.19</td>
+                <td><input type="number" value="1"></td>
+                <td>$118.19</td>
+            </tr>
+            <tr>
+                <td><a href="#"><i class='bx bxs-x-circle'></i></a></td>
+                <td><img src="/static/img/products/f3.jpg" alt=""></td>
+                <td>Cartoon Astranout T-Shirt</td>
+                <td>$118.19</td>
+                <td><input type="number" value="1"></td>
+                <td>$118.19</td>
+            </tr>
+        </tbody>
+    </table>
+</section>
+
+<section id="cart-add" class="section-p1">
+    <div id="coupon">
+        <h3>Apply Coupon</h3>
+        <div>
+            <input type="text" placeholder="Enter Your Coupon">
+            <button class="normal apply">Apply</button>
+        </div>
+    </div>
+
+    <div id="subtotal">
+        <h3>Cart Total</h3>
+        <table>
+            <tr>
+                <td>Cart Subtotal</td>
+                <td>$ 335</td>
+            </tr>
+            <tr>
+                <td>Shipping</td>
+                <td>Free</td>
+            </tr>
+            <tr>
+                <td><strong>Total</strong></td>
+                <td><strong>$ 335</strong></td>
+            </tr>
+        </table>
+        <button class="normal">Proceed to checkout</button>
+    </div>
+</section>
+
+<!-- Footer -->
+<footer class="section-p1">
+    <div class="col">
+        <img class="logo" src="/static/img/logo.png" alt="Logo">
+        <h4>Contact</h4>
+        <p><strong>Address: </strong>562 Weliigreen Road, Street 32, San Francisco</p>
+        <p><strong>Phone: </strong>+01 2222 365 / (+91) 012345 6789</p>
+        <p><strong>Hours: </strong>10:00-18:00, Mon-Sat</p>
+        <div class="follow">
+            <h4>Follow us</h4>
+            <div class="icon">
+                <i class='bx bxl-facebook'></i>
+                <i class='bx bxl-twitter'></i>
+                <i class='bx bxl-instagram'></i>
+                <i class='bx bxl-pinterest-alt'></i>
+                <i class='bx bxl-youtube'></i>
+            </div>
+        </div>
+    </div>
+
+    <div class="col">
+        <h4>About</h4>
+        <a href="#">About us</a>
+        <a href="#">Delivery Information</a>
+        <a href="#">Privacy Policy</a>
+        <a href="#">Terms & Condition</a>
+        <a href="#">Contact Us</a>
+    </div>
+
+    <div class="col">
+        <h4>My Account</h4>
+        <a href="#">Sign In</a>
+        <a href="#">View Cart</a>
+        <a href="#">My Wishlist</a>
+        <a href="#">Track My Order</a>
+        <a href="#">Help</a>
+    </div>
+
+    <div class="col install">
+        <h4>Istall App</h4>
+        <p>From App Store or Google Play</p>
+        <div class="row">
+            <img src="/static/img/pay/app.jpg" alt="">
+            <img src="/static/img/pay/play.jpg" alt="">
+        </div>
+        <p>Secured Payment Gateways</p>
+        <img src="/static/img/pay/pay.png" alt="">
+    </div>
+
+
+    <div class="copyright">
+        <p>&copy; 2023, Tech etc - HTML CSS Ecommerce Template</p>
+    </div>
+</footer>
+
+
+{% endblock body %}
